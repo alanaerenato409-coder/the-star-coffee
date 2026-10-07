@@ -1,0 +1,682 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #573f1f;
+    color: #f7f2eb;
+    line-height: 1.6;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabecalho {
+    width: 100%;
+    padding: 25px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #3b2418;
+    color: #f7f2eb;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c9a27e;
+}
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    background: 
+        linear-gradient(
+            rgba(59, 36, 24, 0.65),
+            rgba(59, 36, 24, 0.65)
+        ),
+        url("../img/ambiente.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #ffffff
+}
+
+.hero-conteudo {
+    max-width: 650px;
+}
+
+.subtitulo {
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+/*botao*/
+
+.botao {
+    display: inline-block;
+
+    padding: 14px  25px;
+
+    background-color: #f7f2eb;
+    color: #3b2418;
+
+    font-weight: bold;
+
+    transition: 0.3s; /*cor quando clica no botão*/
+}
+
+.botao:hover  {
+    background-color: #c9a27e;
+}
+
+/*secao sobre*/
+
+.sobre {
+    padding: 100px  7%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    align-items: center;
+
+}
+
+.sobre-texto {
+    max-width: 550px;
+}
+
+.sobre h2,
+.destaques h2 {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    margin-bottom: 25px;
+}
+
+.link {
+    font-weight: bold;
+    border-bottom: 1px solid #3b2418;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+}
+
+/*Destaques*/
+
+.destaques {
+    padding: 100px 7%;
+
+    background-color: #dbd1c5;
+
+    text-align: center;
+}
+
+.card {
+    background-color: #f7f2eb;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+}
+
+.card-conteudo {
+    padding: 25px;
+}
+
+.card h3 {
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/*rodapé*/
+
+.rodape {
+    padding: 60px 7%;
+
+    background-color: #3b2418;
+    color: #f7f2eb;
+
+    text-align: center;
+}
+
+.rodape h2  {
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.rodape p {
+    margin-top: 10px;
+}
+
+
+
+    /*contatos */
+
+.contato {
+    background-color: #8B7355;
+    color: #F5F0E6;
+    padding: 80px  7%;
+}
+
+    /*faq {
+    background-color: #8B7355;
+    color: #F5F0E6;
+    padding: 80px 7%;
+}*/
+
+ /*contato
+.contato {
+    background-color: #8B7355;
+    color: #F5F0E6;
+    padding: 80px 7%;
+}
+    */
+
+.contato h1 {
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.contatos-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.contato-item {
+    background-color: #F5F0E6;
+    color: #3d2418;
+    padding: 30px;
+}
+
+.contato-item h2 {
+    font-family: Georgia, serif;
+    margin-bottom: 15px;
+}
+
+.contato-item p {
+    margin-bottom: 20px;
+}
+
+.contato-item .botao {
+    background-color: #3b2418;
+    color: #F5F0E6;
+}
+
+.contato-item .botao:hover {
+    background-color: #c9a27e;
+}
+
+/*faq*/
+.faq {
+    background-color: #8B7355;
+    color: #F5F0E6;
+    padding: 80px 7%;
+    
+}
+
+.faq-conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq h1 {
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.perguntas {
+    margin-top: 40px;
+}
+
+.pergunta {
+    background-color: #F5F0E6;
+    color: #3b2418;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.pergunta h2 {
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.pergunta p {
+    margin: 0;
+}
+
+/*SOBRE NOS*/
+.sobre-principal {
+    padding: 100px 7%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+    background-color: #F5F0E6;
+    color: #3b2418;
+}
+
+.sobre-texto {
+    max-width: 550px;
+}
+.sobre-principal h1 {
+    font-family: Georgia, serif;
+
+    font-size: 3rem;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.sobre-principal p {
+    margin-bottom: 20px;
+}
+.sobre-imagem img {
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+}
+
+/*nossa história*/
+
+.nossa-historia {
+    padding: 100px 7%;
+
+    background-color: #8B7355;
+
+    color: #F5F0E6;
+
+    text-align: center;
+}
+
+.historia-conteudo {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+.nossa-historia h2 {
+    font-family: Georgia, serif;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 25px;
+}
+
+.nossa-historia p {
+    margin-bottom: 20px;
+}
+
+/*Missão e Valores*/
+.missao {
+    padding: 100px 7%;
+
+    background-color: #F5F0E6;
+
+    color: #3b2418;
+
+    text-align: center;
+}
+
+.missao h2 {
+    font-family: Georgia, serif;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 50px;
+}
+
+.missao-cards {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 25px;
+}
+
+.missao-card {
+    background-color: #8B7355;
+
+    color: #F5F0E6;
+
+    padding: 35px;
+}
+
+.missao-card h3 {
+    font-family: Georgia, serif;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 15px;
+}
+
+/*pulblico*/
+
+.publico {
+    padding: 100px 7%;
+
+    background-color: #573f1f;
+
+    color: #F5F0E6;
+
+    text-align: center;
+}
+
+.publico-conteudo {
+    max-width: 700px;
+
+    margin: 0 auto;   
+}
+
+.publico h2 {
+    font-family: Georgia, serif;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 25px;
+}
+
+.publico p {
+    margin-bottom: 30px;
+}
+
+/*vitrine e cards de produto -- botoes comprar e qtd*/
+
+.vitrine {
+    padding: 80px 7%;
+    background-color: #f7f2eb;
+    color: #3b2418;
+}
+
+.secao-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.secao-titulo h2 {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+}
+
+/*exibe os cards lado a lado no desktop*/
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card-produto {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-produto img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.card-conteudo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-conteudo h3 {
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #3b2418;
+}
+
+.card-conteudo p {
+    font-size: 0.95rem;
+    color: #573f1f;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.preco-acao {
+    margin-bottom: 15px;
+}
+
+.preco {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #3b2418;
+}
+
+/*Acoes: Qtd + Botao comprar*/
+.acoes-compra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.qtd-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    color: #3b2418;
+}
+
+.qtd-input {
+    width: 55px;
+    padding: 8px;
+    border: 1px solid #c9a27e;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    color: #3b2418;
+    outline: none;
+}
+
+.btn-comprar {
+    flex: 1;
+    padding: 10px 15px;
+    background-color: #3b2418;
+    color: #f7f2eb;
+    border: 1px solid #3b2418;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #c9a27e;
+    color: #3b2418;
+    border-color: #c9a27e;
+}
+
+
+
+/*responsividade*/
+@media (max-width: 768px) {
+
+    /*cabecalho*/
+    .cabecalho {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+/*pagina inicial*/
+    .hero  {
+        min-height: 70vh;
+    }
+/*sobre nos*/
+    .sobre {
+        grid-template-columns: 1fr;
+        padding: 70px 7%;
+    }
+
+    .sobre-imagem img {
+        height: 350px;
+    }
+    /* SOBRE NoS - pagina sobre.html */
+
+    .sobre-principal {
+        grid-template-columns: 1fr;
+        padding: 70px 7%;
+    }
+
+    .sobre-principal h1 {
+        font-size: 2.2rem;
+    }
+
+    .sobre-imagem img {
+        height: 350px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* controle de quantidade e botão de compra*/
+    .acoes-compra {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .qtd-container {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: bold;
+        color: #3b2418;
+    }
+
+
+    .qtd-input,
+    .btn-comprar {
+        border-radius: 4px;
+        border: 1px solid #c9a27e;
+        font-weight: bold;
+    }
+
+    .qtd-input {
+        width: 60px;
+        padding: 6px;
+        text-align: center;
+        color: #3b2418;
+    }
+
+    .btn-comprar:hover {
+        background: #c9a27e;
+        color: #3b2418;
+    }
+
+    .contatos-lista {
+        grid-template-columns: 1fr;
+    }
+    .contato h1 {
+        font-size: 2.2rem;
+    }
+
+    /*faq*/
+    .faq h1 {
+        font-size: 2.2rem;
+    }
+
+    /*missão e valores*/
+    .missao-card {
+        grid-template-columns: 1fr;
+    }
+
+    .missao h2 {
+        font-size: 2.2rem;
+    }
+
+    /*pulblico*/
+    .publico h2 {
+        font-size: 2.2rem;
+    }
+
+}

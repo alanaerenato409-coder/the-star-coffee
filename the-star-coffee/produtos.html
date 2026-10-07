@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - The Star Coffee</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">NOSSOS PRODUTOS</a>
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contatos</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-conteudo">
+                <p class="subtitulo">Compre Aqui</p>
+                <h1>Produtos Exclusivos</h1>
+                <p>Leve a experiência do Star Coffee para sua casa com nossa linha oficial.</p>
+            </div>
+        </section>
+
+        <section class="vitrine">
+            <div class="secao-titulo">
+                <h2>Nossa Coleção</h2>
+            </div>
+            
+            <div class="grid-produtos">
+                <!-- Caneca -->
+                <article class="card-produto">
+                    <img src="img/caneca.jpeg" alt="Caneca Star Coffee">
+                    <div class="card-conteudo">
+                        <h3>Caneca Cerâmica Star</h3>
+                        <p>Caneca artesanal de 350ml com design exclusivo.</p>
+                        <div class="preco-acao">
+                            <span class="preco">R$ 40,00</span>
+                        </div>
+                        <div class="acoes-compra">
+                            <div class="qtd-container">
+                                <label for="qtd-caneca">Qtd:</label>
+                                <input type="number" id="qtd-caneca" class="qtd-input" value="1" min="1">
+                            </div>
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Café em Grãos -->
+                <article class="card-produto">
+                    <img src="img/cafegrao.jpeg" alt="Café em Grãos">
+                    <div class="card-conteudo">
+                        <h3>Café Especial em Grãos 250g</h3>
+                        <p>Grãos selecionados 100% Arábica de torra média.</p>
+                        <div class="preco-acao">
+                            <span class="preco">R$ 30,00</span>
+                        </div>
+                        <div class="acoes-compra">
+                            <div class="qtd-container">
+                                <label for="qtd-grao">Qtd:</label>
+                                <input type="number" id="qtd-grao" class="qtd-input" value="1" min="1">
+                            </div>
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Ecobag -->
+                <article class="card-produto">
+                    <img src="img/ecobag.jpeg" alt="Bolsa - Ecobag">
+                    <div class="card-conteudo">
+                        <h3>Ecobag</h3>
+                        <p>Acessório ideal para levar para qualquer lugar.</p>
+                        <div class="preco-acao">
+                            <span class="preco">R$ 25,00</span>
+                        </div>
+                        <div class="acoes-compra">
+                            <div class="qtd-container">
+                                <label for="qtd-ecobag">Qtd:</label>
+                                <input type="number" id="qtd-ecobag" class="qtd-input" value="1" min="1">
+                            </div>
+                            <button class="btn-comprar">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <h2>THE STAR COFFEE</h2>
+        <p>2026 The Star Coffee</p>
+    </footer>
+</body>
+</html>

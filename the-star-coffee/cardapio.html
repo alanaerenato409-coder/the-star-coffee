@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">
+            CARDÁPIO
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contatos</a>
+            <a href="faq.html">FAQ</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-conteudo">
+                <p class="subtitulo">NOSSO MENU</p>
+                <h1>Sabores Exclusivos</h1>
+                <p>Descubra nossa variedade de cafés artesanais e acompanhamentos incriveis</p>
+            </div>
+        </section>
+
+        <section class="vitrine">
+    <div class="secao-titulo">
+        <h2>Cafés e Bebidas</h2>
+    </div>
+
+    <div class="grid-produtos">
+        <!-- Espresso -->
+        <article class="card-produto">
+            <img src="img/cafeexpresso.jpeg" alt="Espresso Especial">
+            <div class="card-conteudo">
+                <h3>Espresso Star</h3>
+                <p>Café encorporado com notas de chocolate e avelã.</p>
+                <div class="preco-acao">
+                    <span class="preco">R$ 8,50</span>
+                </div>
+                <div class="acoes-compra">
+                    <div class="qtd-container">
+                        <label for="qtd-espresso">Qtd:</label>
+                        <input type="number" id="qtd-espresso" class="qtd-input" value="1" min="1">
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Cappuccino -->
+        <article class="card-produto">
+            <img src="img/cafedoceleite.jpeg" alt="Cappuccino Cremoso">
+            <div class="card-conteudo">
+                <h3>Cappuccino Doce de Leite</h3>
+                <p>Espresso, leite vaporizado, canela e borda de doce de leite.</p>
+                <div class="preco-acao">
+                    <span class="preco">R$ 14,00</span>
+                </div>
+                <div class="acoes-compra">
+                    <div class="qtd-container">
+                        <label for="qtd-cappuccino">Qtd:</label>
+                        <input type="number" id="qtd-cappuccino" class="qtd-input" value="1" min="1">
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Iced Vanilla -->
+        <article class="card-produto">
+            <img src="img/cafebaunilha.jpeg" alt="Iced Coffee (Café Gelado)">
+            <div class="card-conteudo">
+                <h3>Iced Vanilla</h3>
+                <p>Café gelado refinado com essência de baunilha e leite integral.</p>
+                <div class="preco-acao">
+                    <span class="preco">R$ 16,50</span>
+                </div>
+                <div class="acoes-compra">
+                    <div class="qtd-container">
+                        <label for="qtd-iced">Qtd:</label>
+                        <input type="number" id="qtd-iced" class="qtd-input" value="1" min="1">
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+    </main>
+
+    <footer class="rodape">
+        <h2>THE STAR COFFEE</h2>
+        <p>2026 The Star Coffee</p>
+    </footer>
+</body>
+</html>
